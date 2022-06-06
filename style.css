@@ -1,0 +1,286 @@
+
+@font-face {
+  font-family: Ubuntu-Regular;
+  src: url('fonts/ubuntu/Ubuntu-Regular.ttf'); 
+}
+
+@font-face {
+  font-family: Ubuntu-Bold;
+  src: url('fonts/ubuntu/Ubuntu-Bold.ttf'); 
+}
+
+@font-face{
+  font-family: JosefinSans-Bold;
+  src: url('fonts/JosefinSans/JosefinSans-Bold.ttf');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+* {
+	margin: 0px; 
+	padding: 0px; 
+	box-sizing: border-box;
+}
+
+
+body, html {
+	height: 100%;
+  font-family: 'Raleway', sans-serif;
+}
+
+button {
+  outline: none;
+	border: none;
+	background: transparent;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+.limiter {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container-login {
+  width: 100%;  
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  position: relative;
+  background-color: #fff;
+}
+
+
+.wrap-signup{
+  width: 600px;
+  background: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrap-login {
+  width: 500px;
+  background: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+
+.container-reservation{
+  margin-top: 1em;
+  margin-bottom: 3em;
+}
+
+.invalid-header{
+  display: block;
+  /* justify-content: center; */
+  color: #e74c3c;
+  font-size: 15px;
+  padding-bottom: 5px;
+}
+
+.login-form {
+  width: 100%;
+  position: relative;
+  
+  padding-left: 55px;
+  padding-right: 55px;
+  padding-top: 178px;
+}
+
+
+
+.login-form-title {
+  font-family: 'Raleway', sans-serif;
+  font-size: 30px;
+  color: #fff;
+  line-height: 1.2;
+  text-align: center;
+  text-transform: uppercase;
+
+  display: block;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #85b4d0;
+  padding-top: 50px;
+  padding-bottom: 39px;
+}
+
+.wrap-input {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 27px;
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.validate-input[data-validate] .input{
+  border-color: #c92432;
+  color: #c92432;
+  background: #fffafa;
+} 
+
+.radiobutton-container{
+  line-height: 2em;
+  width: 100%;
+  height: 3.5em;
+  background: #eee;
+  border-radius: 27px;
+  position: relative;
+  margin-bottom: 1em;
+  padding-top: .8em;
+  padding-left: 2em;
+}
+
+.gender-container {
+  display: inline;
+  position: relative;
+  padding-left: 6%;
+  padding-right: 15%;
+  cursor: pointer;
+  font-size: 15px;
+  color: #6d6d6d;
+}
+
+.gender-label {
+  padding-right: 15%;
+  color: #6d6d6d;
+}
+
+/* Hide the browser's default radio button */
+.gender-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.gender-container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.gender-container input:checked ~ .checkmark {
+  background-color: #6db5ca;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.gender-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.gender-container .checkmark:after {
+ 	top: 5px;
+	left: 5px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+
+.input {
+  font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+  line-height: 1.2;
+
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 55px;
+  background: #ebebeb;
+  border-radius: 27px;
+  padding: 0 35px 0 35px;
+  border: none;
+  outline: none;
+}
+
+.container-login-form-btn {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 39px;
+}
+
+
+.login-form-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  width: 100%;
+  height: 50px;
+  background-color: #85b4d0  ;
+  border-radius: 25px;
+
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+  color: #fff;
+  line-height: 1.2;
+  text-transform: uppercase;
+
+}
+
+.login-form-btn:hover {
+  background-color: #85b4d0 ;
+  transition: 0.5s;
+}
+
+.txt1 {
+  text-align: center;
+  display: block;
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+  color: #999999;
+  line-height: 1.4;
+}
+
+
+.txt2 {
+  text-align: center;
+  display: block;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  color: #999999;
+  line-height: 1.4;
+  padding-bottom: 0.5em;
+}
+
+.txt3 {
+  text-align: center;
+  display: block;
+  font-family: Ubuntu-Bold;
+  font-size: 14px;
+  color: #85b4d0 ;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
